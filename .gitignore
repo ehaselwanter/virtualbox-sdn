@@ -1,1 +1,4 @@
 .chef/knife.rb
+cookbooks
+tmp
+

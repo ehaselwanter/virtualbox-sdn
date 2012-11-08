@@ -1,0 +1,14 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    apt (1.5.0)
+
+PATH
+  remote: vendor/cookbooks/trema
+  specs:
+    trema (0.1.0)
+
+DEPENDENCIES
+  apt (>= 0)
+  trema (>= 0)
+
