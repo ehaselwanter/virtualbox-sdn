@@ -11,7 +11,8 @@ Vagrant::Config.run do |config|
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
-  # config.vm.box_url = "http://domain.com/path/to/above.box"
+  
+  config.vm.box_url = "https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-ubuntu-12.04.box"                
 
   # Boot with a GUI so you can see the screen. (Default is headless)
   # config.vm.boot_mode = :gui
@@ -67,11 +68,17 @@ Vagrant::Config.run do |config|
     chef.cookbooks_path = "./cookbooks"
     chef.roles_path = "./roles"
     chef.data_bags_path = "./data_bags"
-    #chef.add_recipe "mysql"
-    #chef.add_role "web"
+    chef.add_recipe "apt"
+    chef.add_recipe "build-essential"
+    chef.add_recipe "trema"
+
   
     # You may also specify custom JSON attributes:
-    #chef.json = { :mysql_password => "foo" }
+    chef.json = { 
+      :build_essential => {
+        :compiletime => true
+         }
+       }
   end
 
   # Enable provisioning with chef server, specifying the chef server URL,
