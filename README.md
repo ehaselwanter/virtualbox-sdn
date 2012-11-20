@@ -1,8 +1,12 @@
 # Software Defined Networking Environment with Trema
 
+## Rational 
+
+Explore OpenFlow in reproducible development environment. This box is based on Ubuntu and installs everything needed to get started with [Trema](http://trema.github.com/trema/) and complements this [trema turotial](http://trema-tutorial.heroku.com/) 
+
 ## Install
 
-be sure to install vagrant from [[http://downloads.vagrantup.com/]], not the gem version!
+be sure to install vagrant from [[http://downloads.vagrantup.com/]], NOT the gem version!
 
 - install rvm and trust environment
 - `bundle install`
