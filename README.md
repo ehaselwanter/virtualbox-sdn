@@ -8,8 +8,9 @@ Explore OpenFlow in reproducible development environment. This box is based on U
 
 be sure to install vagrant from [[http://downloads.vagrantup.com/]], NOT the gem version!
 
-- install rvm and trust environment
-- `bundle install`
+- install rvm and trust environment ([[https://rvm.io]])
+- `bundle install` ([[http://gembundler.com]])
+- `bundle exec librarian-chef install` ([[https://github.com/applicationsonline/librarian]])
 - `vagrant up`
 
 ## Use
