@@ -7,7 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
-%w{ruby ruby-dev rubygems git libpcap-dev libsqlite3-dev tmux vim}.each do |package_name|
+%w{ruby ruby-dev rubygems git libpcap-dev libsqlite3-dev libglib2.0-dev tmux vim}.each do |package_name|
 	package package_name
 end
 
